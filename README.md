@@ -1,2 +1,1 @@
-# Reazul-eye-follow
-Used HTML, CSS, BOOTSTRAP, JAVASCRIPT
+Visit website by clickling this link: https://reazulzannahnitol.github.io/Reazul-eye-follow
