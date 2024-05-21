@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+}
+
+.human-image {
+    margin-top: 400px;
+    width: auto;
+    height: 70vh; /* Adjust based on your requirement */
+}
+
+.eye {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-eye {
+    top: 58%; /* Adjust based on the position of the left eye in the image */
+    left: 70%; /* Adjust based on the position of the left eye in the image */
+}
+
+.right-eye {
+    top: 64%; /* Adjust based on the position of the right eye in the image */
+    left: 83%; /* Adjust based on the position of the right eye in the image */
+}
+
+.pupil {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #000;
+    transition: transform 0.1s;
+}
+
+.me {
+    margin-left: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 700px; /* Adjust based on how wide you want the text container to be */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 40px;
+    background: rgba(243, 200, 9, 0.4); /* Add a semi-transparent background to make text readable */
+    border-radius: 10px;
+}
+.me p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* Typewriter effect */
+#typewriter-text {
+    overflow: hidden; /* Ensures no overflow */
+    border-right: .15em solid orange; /* Cursor */
+    white-space: nowrap; /* Keeps text on a single line */
+    margin: 0 auto; /* Adjust as needed */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 5.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
